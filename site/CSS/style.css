@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #54b1afe0;
+    --cor2: #2eafadde;
+    --cor3: #0baca9e0;
+    --cor4: #076d6bde;
+    --cor5: #053837e0;
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-fonte1: 'Daughter of Fortune.ttf', Arial, sans-serif;
+    
+}
+@font-face {
+    font-family:'Daughter of Fortune.ttf';
+    src: url(../fontes/Daughter\ of\ Fortune.ttf) format(truetype);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #97e4e4bb;
+}
+header{
+    background-color: var(--cor1);
+    background-image: linear-gradient(to bottom, #54b1afe0, #053837e0);
+    font-family: var(--font-fonte1);
+    font-size: 30px;
+    text-align: center;
+}
+header > h1{
+    padding-top: 20px;
+    color: rgba(172, 224, 253, 0.877);
+   
+
+}
+header >h2{
+    font-size: 42px;
+    color:rgba(172, 224, 253, 0.877) ;
+}
+body > nav{
+    font-family: var(--font-padrao);
+    box-shadow: 0px 0px 10px black;
+    background-color: rgb(5, 88, 99);
+    font-size: 16px;
+    text-align: left;
+    min-width: 301px; /*é o que abre uma margem e deixa a página centralizada*/
+    max-width: 1002px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+nav a:hover{
+    margin: 10px 10px;
+    background-color: rgba(0, 200, 250, 0.452);
+    color: rgba(83, 230, 230, 0.63);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(178, 233, 243, 0.74);
+    transition-duration: 0.5s;
+}
+nav a{
+    color: rgb(185, 226, 241);
+    text-decoration: none;
+    padding: 10px;
+}
+main{
+    min-width: 300px; /*é o que abre uma margem e deixa a página centralizada*/
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px black;
+    background-color: #73d8d683;
+}
+main > article > h1{
+    text-align: center;
+    color: rgb(2, 34, 34);
+    padding: 10px;
+}
+main > article > p{
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 10px;
+}
+main > article > h2{
+    background-image: linear-gradient(to right, rgba(3, 122, 116, 0.897),
+    rgba(78, 161, 148, 0.849));
+    border-radius: 10px;
+    color: rgb(2, 34, 34);
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 4px 10px rgba(29, 28, 28, 0.863);
+}
+footer{
+    text-align: center;
+    color: rgb(172, 240, 245);
+    background-color: rgb(2, 26, 29);
+    border-radius: 10px;
+    box-shadow: 0px 9px 20px 0px rgba(1, 29, 31, 0.815)
+}
+footer a{
+    color: rgba(13, 192, 43, 0.781);
+    text-decoration: none;
+}
+footer a:hover{
+    color: rgba(71, 231, 98, 0.877);
+    text-decoration: none;
+    background-color: rgb(4, 65, 27);
+    border-radius: 10px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.76);
+}
+main img{
+    width: 100%;
+    min-width: 150px;
+    display: block; /*aqui mexe na centralidade da foto*/
+    margin: auto;
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    height:auto;
+}
+body{
+    background-image:linear-gradient(to bottom, #9c6fb6,#7d20c9);
+    background-attachment: fixed; /*essa parada aqui é que regula o zoom do site */
+}
+main{
+    background-image: linear-gradient(to bottom, #d1bcc8, #cc83ac);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(105, 49, 49, 0.63);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+h1{
+    color: #4d202d;
+    text-align: center;
+    box-shadow: 2px 1px 2px 2px #4b30384f;
+}
+h2{
+    color: #633643;
+}
+p{text-align: justify;
+}

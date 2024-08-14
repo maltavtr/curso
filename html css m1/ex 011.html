@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens que de adaptam sozinhas - e AUDIOS MÍDIAS EM HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>abrir vários sites e aumentar os tamanhos no navegador</p>
+<picture>
+    <!--o source menor tem que ser por cima do maior aqui na ordem do código-->
+    <source media="(max-width: 750px)" srcset="foto-p.png" sizes="">
+    <source media="(max-width: 1050px )" srcset="foto-m.png" sizes="">
+    <img src="foto-g.png" alt="imagem flexível">
+</picture>
+<h1>AUDIOS</h1>
+<p>reprodução de áudio no HTML5</p>
+<audio src="iminigo.mp3" controls></audio>
+<!--a sacada de remover o src que é o source, abrir o comando sem ele funciona tmb, exemplo:-->
+<audio preload="metadata" controls>
+    <source src="" type="audio/mpeg"> <!-- eu deixei sem o source pra gerar o exemplo do errer-->
+    <source src="iminigo.ogg" type="audio/ogg">
+    <source src="iminigo.wav" type="audio/wav">
+<p>Infelizmente não foi possível reproduzir clica <a href="LINK DO SOM">aqui</a>para baixar o arquivo</p> <!-- aqui não aparece no site pq o navegador LÊ áudio, se ele não entender o formato do áudio aí sim aparecerá a msg.-->
+</audio>
+</body>
+</html>

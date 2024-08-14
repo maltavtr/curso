@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Foldit:wght@100..900&family=Grey+Qo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family:'fonteandroid';
+    src: url(../fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+
+}
+:root {
+    --cor0: #67dd88;
+    --cor1: #477453;
+    --cor2: #358149;
+    --cor3: #354b3a;
+    --cor4: #083811;
+    --cor5: #04240b;
+    
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: "Bebas Neue", sans-serif;
+    --font-fonteandroid: 'fonteandroid', Arial;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:#a1b8a7;
+    font-family: var(--font-destaque);
+}
+a.externo:after{
+    content: '\00a0\1F517';
+}
+
+header{
+    background-color: hsl(134, 72%, 20%);
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+}
+header > h1 {
+    color: white;
+    font-size: 70px;
+    font-family:var(--font-destaque);
+    padding-top: 40px;
+    text-shadow:5px 7px rgba(1, 12, 7, 0.589);
+}
+header > p{
+    color: white;
+    font-family:var(--font-padrao);
+    font-size: 22px;
+    padding-top: 0px;
+    padding-bottom: 15px;
+
+}
+nav{
+    box-shadow: 0px 6px 5px 0px rgb(41, 53, 43);
+    background-color: #083811;
+    padding: 10px;
+    font-family: var(--font-padrao);
+}
+nav > a{
+    
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+nav > a:hover{
+    background-color: #358149;
+    border-radius: 10px;
+    color: var(--cor4);
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition-duration: 0.5s; /*faz o texto demorar pra aparecer*/
+}
+main{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgb(186, 238, 206);
+    padding: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+main p{
+    margin: 15px 0px;
+    font-size: 1.2em;
+    text-align: justify;
+    text-indent: 30px; /*o recuo da primeira palavra do parágrafo*/
+    line-height: 1em; /*o espaço de uma linha escrita x a outra*/
+    
+}
+div.video{
+    background-color: #04240b;
+    margin: 0px -10px 30px;
+    padding: 24px;
+    padding-bottom: 55%;
+    position: relative;
+}
+div.video >iframe{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 96%;
+    height: 96%;
+}
+main strong{
+
+    font-weight: bold; /*esse é o negrito*/
+ 
+}
+main a{
+    text-decoration: none; /*tirou a sublimação*/
+    font-weight: bold;
+    color: #04240b;
+    background-color: #67dd88;
+    padding: 2px 6px;
+
+}
+main a:hover{
+    text-decoration: underline;
+    color: #358149;
+
+}
+main h1{
+    color:#253328;
+    font-family: var(--font-fonteandroid);
+}
+main h2{
+    font-family: var(--font-fonteandroid);
+    font-size: 20px;
+    background-image: linear-gradient(to right, var(--cor3), var(--cor0));
+}
+main img{
+    width: 100%;
+
+}
+main img.pequena{
+    width: 25%;
+    min-width: 150px;
+    display: block;
+    margin: auto;
+}
+aside{
+    background-color: rgba(116, 204, 143, 0.623);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(34, 31, 31, 0.596);
+}
+aside > ul{
+    list-style-position: inside; /*as bolinhas para dentro do aside*/
+    columns: 2;
+    list-style-type: '\1F5F8'; /*aqui colocou EMOJI*/
+;
+
+}
+aside h3{
+    background-image: linear-gradient(to left, rgba(207, 247, 207, 0.411), rgb(101, 184, 101));
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /*DevTools ajuda bastante aqui*/
+    font-size: 30px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer{
+    background-color: #04240b;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    font-family: var(--font-padrao);
+    box-shadow: #67dd88;
+    padding: 10px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+ 
+   
+}
+footer a:hover{
+    color: #67dd88;
+    background-color: #477453;
+    border-radius: 10px;
+    padding: 5px;
+    text-shadow: 0px 1px 1px #ffffff;
+    transition-duration: 0.3s;
+}
