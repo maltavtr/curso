@@ -49,7 +49,10 @@ section{
     line-height: 2em; /*é isso que dá o espaçamento entre as linhas*/
     padding-left: 30px;
     font-family: var(--font2);
-    font-size: 3vw;
+    font-size: 3.5vw;
+}
+section > p {
+    padding-bottom: 2em;
 }
 section.normal{
     background-color: white;
@@ -59,14 +62,26 @@ section.normal{
 section.imagem{
     background-color: rgb(83, 78, 78);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.589);
+    background-attachment: fixed; /*esse é o efeito paralax*/
 }
 section.imagem > p {
     display: inline-block; /*aqui a 'caixa' que forma ao texto fica rente ao conteúdo*/
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.308);
+    background-color: rgba(0, 0, 0, 0.356);
+    text-shadow: 3px 3px 0px black;
 }
 a {
     font-weight: bolder;
+}
+section#img1{
+    background-image: url(../imagens/background001.jpg);
+    background-size: cover;
+    background-position: right center; /*se ñ configurar isso, a joaninha não aparece em modo celular*/
+}
+section#img2{
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
 }
 footer{
     background-color: black;
