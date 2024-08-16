@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: rgba(59, 57, 57, 0.76);
+    border: 10px 10px solid black ;
+}
+header > h1{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+header > p{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+header > nav {
+    text-align: right;
+    padding-right: 20px;
+}
+header > nav > a {
+    color: rgb(236, 222, 194);
+    text-decoration: none;
+    padding: 10px;
+}
+body{
+    border: 10px solid black;
+}
