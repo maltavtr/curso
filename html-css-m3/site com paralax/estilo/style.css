@@ -26,20 +26,36 @@ header > h1{
     padding-left: 50px;
     padding-top: 10px;
     font-family: var(--font-fonte1);
-}
-header > p{
-    padding-left: 50px;
-    padding-top: 20px;
+    text-align: center;
 }
 header > nav {
-    text-align: right;
     padding-right: 20px;
+    text-align: right;
 }
 header > nav > a {
     color: rgb(236, 222, 194);
     text-decoration: none;
     padding: 10px;
-    
-
 }
-
+img{
+    width: 90px;
+}
+.container{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+div > p{
+    font-size: 22px;
+}
+.i2{
+    background-size: cover;
+    
+}
+.i3{
+    width: 100%;
+}
+.i4{
+    width: 100%;
+}
