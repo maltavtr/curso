@@ -1,61 +1,65 @@
 @charset "UTF-8";
-
+:root{
+    --font-fonte1: 'fonte1'
+}
 *{
     margin: 0px;
     padding: 0px;
 }
 html, body{
     min-height: 100vh; /*isos é importando para ver a página completa pq td ta dentro do body*/
+    background-color: rgba(187, 176, 176, 0.76);
 }
 @font-face{
     font-family: 'fonte1';
     src: url(../fontes/Madina.otf) format(opentype);
-}
-:root{
-    --font-fonte1:var(--font-fonte1)
+    font-weight: normal;
 }
 body{
-    background-color: rgba(196, 187, 187, 0.76);
+    background-color: rgb(255, 255, 255);
 }
 header{
-    background-color: rgba(39, 36, 36, 0.76);
-    border-bottom: 3px solid rgb(221, 109, 4) ;
-    
+    background-color: rgb(255, 255, 255);
+    border-bottom: 3px solid #0CE6E8  
 }
-header > h1{
-    padding-left: 50px;
-    padding-top: 10px;
+.container > img{
+    width: 400px;
+    display: flex;
+}
+eader > h1{
     font-family: var(--font-fonte1);
     text-align: center;
+    font-size: 6em;
+    padding-top: 2%;
+    color: #0CE6E8
 }
 header > nav {
     padding-right: 20px;
-    text-align: right;
+    text-align: center;
 }
 header > nav > a {
-    color: rgb(236, 222, 194);
+    color: rgb(36, 34, 138);
     text-decoration: none;
     padding: 10px;
 }
 img{
     width: 90px;
-}
-.container{
-    margin-left: 30px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
-div > p{
-    font-size: 22px;
+    padding-top: 20px;
 }
 .i2{
-    background-size: cover;
-    
+    width: 100% ;
+    background-image: cover;
+    background-attachment: fixed;  
 }
 .i3{
-    width: 100%;
+    width: 100vw ;
+    background-image: cover;
+    background-attachment: fixed;  
 }
-.i4{
-    width: 100%;
+section.normal > p{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    font-size: 22px;
+    line-height: 2em;
 }
