@@ -24,7 +24,7 @@ header{
 }
 .container > img{
     width: 400px;
-    display: flex;
+    
 }
 eader > h1{
     font-family: var(--font-fonte1);
@@ -62,4 +62,12 @@ section.normal > p{
     padding-left: 30px;
     font-size: 22px;
     line-height: 2em;
+    display: inline-block;
+    background-color: rgba(182, 190, 236, 0.377);
+    border-radius: 10px;
+    color: rgb(36, 34, 138);
+    text-shadow: 0px 0px 1px rgb(27, 28, 85);
+}
+section{
+    background-attachment: fixed;
 }
