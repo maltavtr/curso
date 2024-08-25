@@ -71,3 +71,6 @@ section.normal > p{
 section{
     background-attachment: fixed;
 }
+footer{
+    background-color: rgb(129, 94, 94);
+}
