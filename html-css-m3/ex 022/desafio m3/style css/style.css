@@ -58,6 +58,9 @@ section.normal{
     background-color: white;
     color: black;      
 }
+section#img2{
+    background-image: url(/site/fotos/casamento\ 1.png);
+}
 
 section.imagem{
     background-color: rgb(83, 78, 78);

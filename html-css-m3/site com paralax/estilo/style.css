@@ -8,7 +8,6 @@
 }
 /*html, body{
     min-height: 100vh; /*isos é importando para ver a página completa pq td ta dentro do body*/
-
 /*@font-face{
     font-family: 'fonte1';
     src: url(../fontes/Madina.otf) format(opentype);
@@ -21,19 +20,15 @@ header{
     background-color: rgb(255, 255, 255);
     border-bottom: 3px solid #0CE6E8 ; 
     width: 100%;
-    padding-bottom: 3px;
-    
+    padding-bottom: 3px;   
 }
 .container > img{
     /*position: relative;
     left: 28%; /*ESSE POSITION RELATIVE ABRE O LEFT E AÍ FUNCIONA O POSICIONAMENTO*/
     /*transform: translate(20%, 25%); ISSO AQUI TAMBÉM MUDA A POSIÇÃO DO ITEM*/  
     width: 100%;
-    max-width: 400px;
-    
-    
+    max-width: 400px;   
 }
-
 header > nav {
     padding-right: 20px;
     text-align: center;
@@ -48,29 +43,18 @@ header > nav > a {
 header > nav > a:hover{
     background-color: rgba(56, 110, 126, 0.562);
     border-radius: 25px;
-    transition-duration: 0.5s;
-    
+    transition-duration: 0.5s;   
 }
 img{
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.i2{
-    width: 100% ;
-    background-image: cover;
-}
-.i3{
-    width: 100% ;
-    background-attachment: fixed;
-   
-}
-section#img3{
-    background-size: cover;
-    background-image: url(/site/fotos/casamento\ 1.png);
+section.normal{
+    text-align: center;
+    padding: 10px;  
 }
 section.normal > p{
-  
     font-size: 22px;
     padding: 30px 30px;
     line-height: 2em;
@@ -81,9 +65,18 @@ section.normal > p{
     text-shadow: 0px 0px 1px rgba(27, 28, 85, 0.432);
     margin: 2px;
     padding-top: 100px;
-    border: #0ce4e813 solid;
-    
+    border: #0ce4e813 solid;  
 }
+section.i2{
+    background-attachment: fixed;
+    padding-top: 25%;
+}
+section#img2{
+    background-image: url(../img/casal2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 p.alianca1{
     background-image: url(../img/alianca1.png);
     background-repeat: no-repeat;
@@ -105,8 +98,18 @@ p.festa{
 section > p:hover{
     background-color: rgba(56, 110, 126, 0.219);
 }
-section.normal{
-    text-align: center;
-    padding: 10px;
+div.corporativog{
+    background-image: url(../img/corporativog.jpg);
+    background-repeat: no-repeat;   
+    width: 100%;
+    background-position: top center;
+}
+div#corporativogg{
+    background-attachment: fixed;
+    
+}
+section > div{
+    margin-bottom: 1000px;
+    padding-bottom: 1000px;
    
 }
