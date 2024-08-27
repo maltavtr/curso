@@ -21,15 +21,16 @@ header{
     background-color: rgb(255, 255, 255);
     border-bottom: 3px solid #0CE6E8 ; 
     width: 100%;
+    padding-bottom: 3px;
     
 }
 .container > img{
     /*position: relative;
     left: 28%; /*ESSE POSITION RELATIVE ABRE O LEFT E AÍ FUNCIONA O POSICIONAMENTO*/
-    /*transform: translate(20%, 25%); ISSO AQUI TAMBÉM REDIMENSIONA*/  
+    /*transform: translate(20%, 25%); ISSO AQUI TAMBÉM MUDA A POSIÇÃO DO ITEM*/  
     width: 100%;
     max-width: 400px;
-    margin: auto;
+    
     
 }
 
@@ -41,6 +42,14 @@ header > nav > a {
     color: rgb(36, 34, 138);
     text-decoration: none;
     padding: 10px;
+    position: relative;
+    top: -10px;
+}
+header > nav > a:hover{
+    background-color: rgba(56, 110, 126, 0.562);
+    border-radius: 25px;
+    transition-duration: 0.5s;
+    
 }
 img{
     width: 100%;
@@ -66,12 +75,35 @@ section.normal > p{
     padding: 30px 30px;
     line-height: 2em;
     display: inline-block; /*faz ficar dento de caixas e em linha horizontal*/
-    background-color: rgba(182, 190, 236, 0.377);
+    background-color: #0ce4e813;
     border-radius: 10px;
-    color: rgb(36, 34, 138);
-    text-shadow: 0px 0px 1px rgb(27, 28, 85);
+    color: rgba(34, 88, 138, 0.952);
+    text-shadow: 0px 0px 1px rgba(27, 28, 85, 0.432);
     margin: 2px;
+    padding-top: 100px;
+    border: #0ce4e813 solid;
     
+}
+p.alianca1{
+    background-image: url(../img/alianca1.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 50% 3%;   
+}
+p.corporativo{
+    background-image: url(../img/corporativo.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 50% 4%; 
+}
+p.festa{
+    background-image: url(../img/festa.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 50% 1%; 
+}
+section > p:hover{
+    background-color: rgba(56, 110, 126, 0.219);
 }
 section.normal{
     text-align: center;
