@@ -6,33 +6,33 @@
     margin: 0px;
     padding: 0px;
 }
-html, body{
+/*html, body{
     min-height: 100vh; /*isos é importando para ver a página completa pq td ta dentro do body*/
-    background-color: rgba(187, 176, 176, 0.76);
-}
-@font-face{
+
+/*@font-face{
     font-family: 'fonte1';
     src: url(../fontes/Madina.otf) format(opentype);
     font-weight: normal;
-}
+} NÃO ESTOU MAIS USANDO */
 body{
     background-color: rgb(255, 255, 255);
 }
 header{
     background-color: rgb(255, 255, 255);
-    border-bottom: 3px solid #0CE6E8  
-}
-.container > img{
-    width: 400px;
+    border-bottom: 3px solid #0CE6E8 ; 
+    width: 100%;
     
 }
-eader > h1{
-    font-family: var(--font-fonte1);
-    text-align: center;
-    font-size: 6em;
-    padding-top: 2%;
-    color: #0CE6E8
+.container > img{
+    /*position: relative;
+    left: 28%; /*ESSE POSITION RELATIVE ABRE O LEFT E AÍ FUNCIONA O POSICIONAMENTO*/
+    /*transform: translate(20%, 25%); ISSO AQUI TAMBÉM REDIMENSIONA*/  
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    
 }
+
 header > nav {
     padding-right: 20px;
     text-align: center;
@@ -43,34 +43,38 @@ header > nav > a {
     padding: 10px;
 }
 img{
-    width: 90px;
+    width: 100%;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 .i2{
     width: 100% ;
     background-image: cover;
-    background-attachment: fixed;  
 }
 .i3{
-    width: 100vw ;
-    background-image: cover;
-    background-attachment: fixed;  
+    width: 100% ;
+    background-attachment: fixed;
+   
+}
+section#img3{
+    background-size: cover;
+    background-image: url(/site/fotos/casamento\ 1.png);
 }
 section.normal > p{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 30px;
+  
     font-size: 22px;
+    padding: 30px 30px;
     line-height: 2em;
-    display: inline-block;
+    display: inline-block; /*faz ficar dento de caixas e em linha horizontal*/
     background-color: rgba(182, 190, 236, 0.377);
     border-radius: 10px;
     color: rgb(36, 34, 138);
     text-shadow: 0px 0px 1px rgb(27, 28, 85);
+    margin: 2px;
+    
 }
-section{
-    background-attachment: fixed;
-}
-footer{
-    background-color: rgb(129, 94, 94);
+section.normal{
+    text-align: center;
+    padding: 10px;
+   
 }
