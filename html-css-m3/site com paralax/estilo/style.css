@@ -101,15 +101,14 @@ section > p:hover{
 div.corporativog{
     background-image: url(../img/corporativog.jpg);
     background-repeat: no-repeat;   
-    width: 100%;
+    
     background-position: top center;
 }
 div#corporativogg{
     background-attachment: fixed;
+    width: 100%;
     
 }
-section > div{
-    margin-bottom: 1000px;
-    padding-bottom: 1000px;
-   
+.teste{
+    width: 10px;
 }
