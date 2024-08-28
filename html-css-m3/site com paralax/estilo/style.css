@@ -5,6 +5,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 /*html, body{
     min-height: 100vh; /*isos é importando para ver a página completa pq td ta dentro do body*/
@@ -67,6 +68,7 @@ section.normal > p{
     padding-top: 100px;
     border: #0ce4e813 solid;  
 }
+
 section.i2{
     background-attachment: fixed;
     padding-top: 25%;
@@ -98,17 +100,10 @@ p.festa{
 section > p:hover{
     background-color: rgba(56, 110, 126, 0.219);
 }
-div.corporativog{
-    background-image: url(../img/corporativog.jpg);
-    background-repeat: no-repeat;   
-    
-    background-position: top center;
+.carrosel{
+    margin: auto;
+    width: 400px;
 }
-div#corporativogg{
-    background-attachment: fixed;
-    width: 100%;
-    
-}
-.teste{
-    width: 10px;
+div > img.f1{
+    border-radius: 100px 100px;
 }
