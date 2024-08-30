@@ -11,13 +11,88 @@
         <div class="container" id="img1">
             <img src="img/Vintage Goods (1).png" alt="">
         </div> 
-            
         <nav>
-            <a href="#">ORÇAMENTO</a>
-            <a href="#">CONTATO</a>
-            <a href="#">PORTFÓLIO</a>
+            <a class="orcamento-btn" onclick="openOrcamentoForm()" href="#">ORÇAMENTO</a>
+            <a class="contact-btn" onclick="openContactForm()" href="#">CONTATO</a>
+            <a class="open-carousel-btn" onclick="openCarousel()" href="#">PORTFÓLIO</a>
         </nav>
     </header>
+
+ <!--ORÇAMENTO-->
+    <div id="orcamentoForm" class="orcamento-form">
+        <div class="orcamento-form-header">
+            <span onclick="closeOrcamentoForm()" class="close-btn">&times;</span>
+            <h2>Orçamento</h2>
+        </div>
+        <form action="processa_formulario.php" method="POST">
+            <div class="input-group">
+                <label for="nome">
+                    <p>
+                        Os valores variam de acordo com a cidade, dia da semana e duração do evento.
+                        Uma média de valores considerando região de São José do Rio Preto (SP), fim de semana e duração de até 2 horas de apresentação:<br>
+                        <br>
+                        <a class="orcp">Musicista:</a> <b class="orcp">$600,00.</b><br>
+                        <a class="orcp">Técnico de som:</a> <b class="orcp">$200,00.</b><br>
+                        <a class="orcp">Equipamento de:</a> <b class="orcp">$1.200,00.</b><br>
+                        <br>
+                        
+                        Dependendo das variáveis já citadas, nós da Agência Viver, estamos de braços abertos para negociar o orçamento conforme a necessidade do evento.
+                    </p>
+                </label>
+                
+            </div>
+            
+        </form>
+    </div>
+<!--FIM DO ORÇAMENTO-->
+
+<!--CONTATO-->
+    <div id="contactForm" class="contact-form">
+        <div class="contact-form-header">
+            <span onclick="closeContactForm()" class="close-btn">&times;</span>
+            <h2>Contato</h2>
+        </div>
+        <form action="processa_formulario.php" method="POST">
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Telefône:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+<!--FIM DO CONTATO-->
+
+<!--PORTFÓLIO-->
+
+<div id="carouselModal" class="carousel-modal">
+    <div class="carousel-content">
+        
+        <div class="carousel">
+            <button class="carousel-btn prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-images">
+                    <img src="img/h1.jpg" alt="Imagem 1">
+                    <img src="img/h2.jpg" alt="Imagem 2">
+                    <img src="img/h4.jpg" alt="Imagem 3">
+                    <img src="img/h5.jpg" alt="Imagem 4">
+                    <img src="img/h6.jpg" alt="Imagem 5">
+                    <img src="img/h7.jpg" alt="Imagem 6">
+                    
+                </div>
+                <button class="carousel-btn next" onclick="nextSlide()">&#10095;</button>
+            </div>
+            <button class="close-carousel-btn" onclick="closeCarousel()">Fechar</button>
+        </div>
+    </div>
+<!--FIM DO PORTFÓLIO-->
+
 <section class="i2" id="img2">
     <img  src="#" alt="">
 </section>
@@ -55,16 +130,23 @@
     </p> 
     </section>
 </section>
+<!--BOTÃO DE VOLTAR-->
+<a href="#" class="back-to-top" id="backToTop">⬆</a>
+<!--FIM DO BOTÃO DE VOLTAR-->
 
 <div class="carrosel">
         <div>
-            <img class="f1" src="../site com paralax/img/s1.jpg" alt="">
-            <img class="f1" src="../site com paralax/img/s2.jpg" alt="">
-            <img class="f1" src="../site com paralax/img/s3.jpg" alt=""> 
-            <img class="f1" src="../site com paralax/img/s4.jpg" alt="">
             <img class="f1" src="../site com paralax/img/s5.jpg" alt="">
+            <img class="f1" src="../site com paralax/img/s3.jpg" alt=""> 
+            <img class="f1" src="../site com paralax/img/s1.jpg" alt="">       
         </div>                                   
 </div>
-
+<footer>
+    <h1>
+    Fale conosco pelo
+    <a href="https://w.app/agenciaviver" target="_blank">WhatsApp</a>
+    </h1>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

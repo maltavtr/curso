@@ -9,11 +9,11 @@
 }
 /*html, body{
     min-height: 100vh; /*isos é importando para ver a página completa pq td ta dentro do body*/
-/*@font-face{
+@font-face{
     font-family: 'fonte1';
     src: url(../fontes/Madina.otf) format(opentype);
     font-weight: normal;
-} NÃO ESTOU MAIS USANDO */
+}
 body{
     background-color: rgb(255, 255, 255);
 }
@@ -46,11 +46,7 @@ header > nav > a:hover{
     border-radius: 25px;
     transition-duration: 0.5s;   
 }
-img{
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+
 section.normal{
     text-align: center;
     padding: 10px;  
@@ -77,6 +73,7 @@ section#img2{
     background-image: url(../img/casal2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
 }
 
 p.alianca1{
@@ -101,9 +98,245 @@ section > p:hover{
     background-color: rgba(56, 110, 126, 0.219);
 }
 .carrosel{
-    margin: auto;
-    width: 400px;
+    display: flex; /*esses 2 trabalham juntos*/
+    justify-content: center;
+    padding: 0px 60px;
+    
 }
 div > img.f1{
     border-radius: 100px 100px;
+    width: 400px;
+    padding: 2px;
 }
+footer{
+    font-family: var(--font-fonte1);
+    font-size: 30px;
+    background-color: #0ce4e813;
+    border: #0ce4e813 solid; 
+    text-align: center;
+    padding: 10px;
+    padding-top: 15px;
+}
+footer > h1 > a{
+    text-decoration: none;
+    color: rgb(11, 94, 11);
+}
+footer > h1 > a:hover{
+   
+    color: rgb(50, 212, 77);
+}
+
+/*ORÇAMENTO*/
+
+.orcamento-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d7ebf5;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 500px;
+    z-index: 1001;
+    overflow-y: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(34, 88, 138, 0.952);
+}
+a.orcp{
+    color:rgb(15, 43, 70);
+    font-size: 18px ;
+}
+b.orcp{
+    color: rgb(0, 0, 0);
+}
+
+.orcamento-form-header {
+    background-color: #2ac9e6dc;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/*FIM DO ORÇAMENTO*/
+
+/*CONTATO*/
+.contact-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    overflow-y: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.contact-form-header {
+    background-color: #2ac9e6dc;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.input-group {
+    margin: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: calc(100% - 40px);
+    margin: 20px;
+    padding: 10px;
+    background-color: #19718183;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0ce4e8;
+}
+/*FIM DO CONTATO*/
+
+/*PORTFÓLIO*/
+
+.carousel-modal {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.carousel-content {
+    padding-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 500px;
+    position: relative;
+    text-align: center;
+}
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 1001;
+}
+.carousel-btn.prev {
+    left: 10px;
+}
+.carousel-btn.next {
+    right: 10px;
+}
+.close-carousel-btn {
+    padding: 10px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+/*FIM DO PORTFÓLIO*/
+
+
+/*BOTÃO DE ROLAR*/
+
+.back-to-top {
+    position: fixed;
+    bottom: 92px;
+    right: 5px;
+    display: none; /* Escondido por padrão */
+    background-color: #257cb6ad;
+    color: white;
+    padding: 6px 11px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+}
+.back-to-top:hover {
+    background-color: #0b135f;
+}
+
+/*FIM DO BOTÃO DE ROLAR*/
+
