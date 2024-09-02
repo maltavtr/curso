@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Células</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            text-align: center;
+            
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .teste1{
+            background-color: rgba(112, 87, 87, 0.527);
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <colgroup> <!--ISSO FAZ A COLUNA INTEIRA SER CUSTOMIZADA-->
+            <col class="teste1">
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!--ISSO FAZ O ITEM B OCUPAR 2 COLUNAS-->
+            
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td rowspan="3">F</td> <!--ISSO FAZ O ITEM OCUPAR x COLUNAS-->
+        </tr>
+        <tr>
+           
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+</body>
+</html>
