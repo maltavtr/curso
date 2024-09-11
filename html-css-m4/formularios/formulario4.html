@@ -19,11 +19,63 @@
                 <input type="tel" name="tel" id="itel" autocomplete="on" pattern="^[0-9]{4}-[0-9]{4}$" required placeholder="xxxx-xxxx"> <!--REGEX - ESTUDAR ESSES CÓDIGOS-->
             </p>
             <input type="checkbox" name="futebol" id="ifutebol">
-            <label for="ifutebol">Futebol</label>
+            <label for="ifutebol">Futebol</label><br>
+            <input type="checkbox" name="futebol" id="ibas">
+            <label for="ibas">Basquete</label><br>
+            <input type="checkbox" name="futebol" id="ivo">
+            <label for="ivo">Vôlei</label><br>
         </fieldset>
+        <fieldset>
+            <input type="radio" name="sexo" id="imas" value="m">
+            <label for="imas">Masculino</label><br>
+            <input type="radio" name="sexo" id="ifem" value="f">
+            <label for="ifem">Feminino</label><br>
+            <input type="radio" name="sexo" id="iout">
+            <label for="iout">Outro</label><br>
+            <!--DEIXAR A BOLINHA DO RADIO SEM FICAR FIXA É SÓ POR O 'NAME' IGUAL P/ TODOS-->
+        </fieldset>
+            
+            <fieldset>
+                <legend>Matemárica</legend>
+                <p>
+                    <label for="inum">Número 1:</label>
+                    <input type="number" name="numero" id="inum" oninput="isoma.innerHTML = Number(inum.value) + Number(inum2.value)"> <!--isso é javascript-->
+                    
+                </p>
+                <p>
+                <label for="inum2">Número 2:</label>
+                    <input type="number" name="numero" id="inum2" oninput="isoma.innerHTML = Number(inum.value) + Number(inum2.value)">
+                   
+                </p>
+                <p>
+                    <label for="isoma">Soma:</label>
+                    <output name="soma" id="isoma" >0</output>
+                    
+                </p>
+                <p>
+                    <label for="ibastao">Número:</label>
+                    <input type="range" name="bastao" id="ibastao" min="0" max="10" value="5" oninput="ival.innerHTML = Number(ibastao.value)">
+                    <output id="ival">5</output>
+                </p>
+                <p>
+                    <label for="idade">Em qual ano você nasceu?</label>
+                    <input type="number" name="data" id="idade" min="1900" max="2025" oninput="calcIdade()">
+                </p>
+                <p>
+                    <label for="iidade">Sua idade é:</label>
+                    <output id="iidade">0</output>
+                </p>
+                
+                
+            </fieldset>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </form>
-    
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(idade.value)
+        }
+    </script>
 </body>
 </html>
